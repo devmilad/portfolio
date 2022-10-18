@@ -1,0 +1,90 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+:root{
+    --body-color:#0b111e;
+    --font-color:#a395e9;
+    --btn-color:#FF8F6D;
+    --container-color:	#151c28;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background-color: var(--body-color);
+}
+
+.wrapper{
+    width: 380px;
+    background-color:var(--container-color) ;
+    border-radius: 15px;
+    border: 1px solid var(--font-color);
+}
+
+.wrapper .title{
+    color: var(--font-color);
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px 15px 0 0 ;
+    
+}
+
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+
+}
+
+.wrapper form .field{
+position: relative;
+height: 50px;
+width: 100%;
+margin-top: 20px;
+}
+
+.wrapper form .field input{
+    height: 100%;
+    width: 100%;  
+    padding-left: 20px;
+    border-radius: 7.5px;
+    border: 1px solid var(--font-color);
+    background: transparent;
+    color: #fff;
+}
+
+
+
+.wrapper form .field label{
+    position: absolute;
+    color: var(--font-color);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.pass-link {
+ margin: 12px 0;
+}
+
+.pass-link a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.wrapper form   .button{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color: var(--font-color);
+    color: var(--body-color);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .4s;
+    cursor: pointer;
+  }
